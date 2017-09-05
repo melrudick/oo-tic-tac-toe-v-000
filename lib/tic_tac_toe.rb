@@ -97,6 +97,7 @@ class TicTacToe
           return win_combination
     end
 end
+end
 #
 #   def full?
 #     @board.all? do |pos|
