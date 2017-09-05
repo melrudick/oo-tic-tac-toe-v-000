@@ -67,20 +67,20 @@ class TicTacToe
     def current_player
       turn_count.even? ? "X" : "O"
     end
+
+    def turn
+      puts "Please enter 1-9:"
+      integer = gets.strip
+      position = input_to_index(integer)
+      if valid_move?(position)
+        char = current_player
+        move(position, char)
+      else
+        turn
+      end
+      display_board
 end
-#     def turn
-#       puts "Please enter 1-9:"
-#       integer = gets.strip
-#       position = input_to_index(integer)
-#       if valid_move?(position)
-#         char = current_player
-#         move(position, char)
-#       else
-#         turn
-#       end
-#       display_board
-#
-#     end
+    end
 #
 #     def won?
 #       WIN_COMBINATIONS.each do |win_combination|
