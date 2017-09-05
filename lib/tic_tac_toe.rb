@@ -103,7 +103,7 @@ end
 #     @board.all? do |pos|
 #       pos == "X" || pos == "O"
 
-  
+
     # def play
     #   while !over?
     #     turn
